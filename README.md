@@ -54,6 +54,6 @@ Test 9: "If sum of modified credit card numbers doesn't end with a 0, the card i
 Code:
         const number = "4102080880435620";
         applyLuhn(number);
-Expected Output: "This card number is valid."
+Expected Output: "This card number is Not Valid."
 ```
 
