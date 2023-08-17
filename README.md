@@ -45,6 +45,17 @@ Code: array = [1234]
       array[i] = array[i] * 2;
 Expected Result: [1438]
 
+Test 6: "If element in new array is double digit, then we find the sum of both digits."
+Code:
+const number = "4102080860435620";
+        applyLuhn(number);
+Expected Results: [4,2,0,4,...]
+
+Test 7: "If credit card number is valid, all numbers of the new array should sum together and return a value that ends with 0."
+Code:
+        const number = "4102080860435620";
+        applyLuhn(number);
+Expected Output: -0
 
 
 
