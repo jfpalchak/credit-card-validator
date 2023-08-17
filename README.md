@@ -12,6 +12,7 @@ if cardSum ends in 0 {
 } else
   is NOT VALID 
 
+
 A valid number: '4102080860435620'
 An invalid number: '4102080880435620'
 
@@ -33,6 +34,7 @@ Code:   const number = "4102080860435620";
         applyLuhn(number);
 Expected Output: true
 
-Test 4: "Create new array and verify the length is 16 numbers"
-Code: 
-Expected Output:
+Test 4: "Create new array and verify the length is 16 elements"
+Code:   const number = "4102080860435620";
+        applyLuhn(number);
+Expected Output: ['4','1','0','2',...]

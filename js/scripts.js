@@ -2,13 +2,18 @@ function applyLuhn(number){
 
 // const number = number;
 const numberInt = parseInt(number);
-let numbersArray = number.split("");
+const numbersArray = number.split("");
 
-if (!number.length === 16){
+
+if (number.length !== 16 || isNaN(number)){
     return false;
+} 
+let intArray = numbersArray.map(function(number) {
+  return parseInt(number);
+});
+
+return intArray;
 }
 
-return numbersArray;
 
-}
 // numbersArray.forEach(function(element)){
