@@ -1,16 +1,16 @@
 from end of card number, move left
 every other digit, x2
-if (digit * 2  > 9) {
-  sum = digit 1 and digit 2 of (digit * 2)
-  new digit = sum
-} else {
-  new digit = digit*2
-}
-cardSum = sum all new digits
-if cardSum ends in 0 {
- is VALID
-} else
-  is NOT VALID 
+  if (digit * 2  > 9) {
+    sum = digit 1 and digit 2 of (digit * 2)
+    new digit = sum
+  } else {
+    new digit = digit*2
+  }
+  cardSum = sum all new digits
+  if cardSum ends in 0 {
+  is VALID
+  }   else
+    is NOT VALID 
 
 
 A valid number: '4102080860435620'
@@ -34,7 +34,17 @@ Code:   const number = "4102080860435620";
         applyLuhn(number);
 Expected Output: true
 
-Test 4: "Create new array and verify the length is 16 elements"
+Test 4: "Create new array of integers and verify the length is 16 elements"
 Code:   const number = "4102080860435620";
         applyLuhn(number);
-Expected Output: ['4','1','0','2',...]
+Expected Output: [4,1,0,2,...]
+
+Test 5: "Multiply index 1 in the array and every other index after index 1."
+Code: array = [1234]
+      for (i = 1; i < array.length; i = i + 2)
+      array[i] = array[i] * 2;
+Expected Result: [1438]
+
+
+
+
