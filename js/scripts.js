@@ -19,8 +19,15 @@ for (i = 1; i < intArray.length; i = i + 2) {
   }
 }
 
+let sum = 0;
+intArray.forEach(function(number) {
+  sum += number;
+});
 
-
-return intArray;
+if ((sum % 10) > 0) {
+  return "This card number is not valid.";
+} else {
+  return "This card number is valid.";
+}
 
 }

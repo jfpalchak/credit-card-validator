@@ -55,7 +55,18 @@ Test 7: "If credit card number is valid, all numbers of the new array should sum
 Code:
         const number = "4102080860435620";
         applyLuhn(number);
-Expected Output: -0
+Expected Output: 50
 
+Test 8: "If sum of modified credit card numbers ends with a 0, the card is valid, and function returns the card as Valid."
+Code:
+        const number = "4102080860435620";
+        applyLuhn(number);
+Expected Output: "This card number is valid."
+
+Test 9: "If sum of modified credit card numbers doesn't end with a 0, the card is not valid, and function returns the card as Not Valid."
+Code:
+        const number = "4102080880435620";
+        applyLuhn(number);
+Expected Output: "This card number is valid."
 
 
